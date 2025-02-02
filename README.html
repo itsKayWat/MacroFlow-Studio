@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacroFlow Studio Documentation</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            --section-bg: #f5f5f5;
+            --button-color: #0077ee;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --text-color: #ffffff;
+                --section-bg: #2d2d2d;
+                --button-color: #0077ee;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section {
+            background-color: var(--section-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        h1, h2, h3 {
+            color: var(--text-color);
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--button-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        .button:hover {
+            opacity: 0.9;
+        }
+
+        .dev-signature {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid var(--text-color);
+        }
+
+        /* Enhanced button styles */
+        .top-buttons {
+            text-align: center;
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .download-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 5px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border: 2px solid transparent;
+        }
+
+        .github-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            background-color: #24292e;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 5px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border: 2px solid transparent;
+        }
+
+        .download-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+
+        .github-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            background-color: #2f363d;
+            border-color: #1b1f23;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .download-button {
+                background-color: #2ea44f;
+            }
+            .github-button {
+                background-color: #30363d;
+            }
+            .download-button:hover {
+                background-color: #2c974b;
+                border-color: #2a8f47;
+            }
+            .github-button:hover {
+                background-color: #3c444d;
+                border-color: #272c32;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MacroFlow Studio</h1>
+        <p>Visual Automation Made Simple</p>
+
+        <div class="top-buttons">
+            <a href="https://github.com/KayWat/MacroFlow-Studio/raw/main/reference-capture.py" class="download-button">⬇️ Reference Capture Tool</a>
+            <a href="https://github.com/KayWat/MacroFlow-Studio/raw/main/macro-tool.py" class="download-button">⬇️ Macro Recorder Tool</a>
+            <a href="https://github.com/KayWat/MacroFlow-Studio" class="github-button">📦 View on GitHub</a>
+        </div>
+
+        <section>
+            <h2>What is MacroFlow Studio?</h2>
+            <p>MacroFlow Studio is a comprehensive visual automation suite that combines reference point capture with macro sequencing capabilities. It consists of two main tools:</p>
+            <ul>
+                <li>Reference Capture Tool - For capturing and managing visual reference points</li>
+                <li>Macro Recorder - For creating automated sequences using captured references</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Key Features</h2>
+            <ul>
+                <li>Visual Reference Capture</li>
+                <li>Macro Recording and Playback</li>
+                <li>Web Element Support</li>
+                <li>Coordinate Tracking</li>
+                <li>Screenshot Management</li>
+                <li>Video Recording</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Installation</h2>
+            <ol>
+                <li>Clone the repository</li>
+                <li>Run requirements.py to install dependencies:
+                    <pre>python requirements.py</pre>
+                </li>
+                <li>Launch reference-capture.py to gather reference points</li>
+                <li>Use macro-tool.py to create automated sequences</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>System Requirements</h2>
+            <ul>
+                <li>Python 3.8 or higher</li>
+                <li>Windows Operating System</li>
+                <li>1920x1080 resolution (recommended)</li>
+                <li>Internet connection for web automation features</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Getting Started</h2>
+            <ol>
+                <li>Launch Reference Capture Tool</li>
+                <li>Capture UI elements you want to automate</li>
+                <li>Open Macro Recorder</li>
+                <li>Create automation sequence using captured references</li>
+                <li>Save and run your macro</li>
+            </ol>
+        </section>
+
+        <div class="dev-signature">
+            <p>👋 Hey fellow developers!</p>
+            <p>If you find MacroFlow Studio helpful, consider buying KayWat a coffee!</p>
+            <a href="https://www.paypal.com/donate/?hosted_button_id=KAYWAT&custom=1coffee" class="button">☕ One Coffee ($6)</a>
+            <a href="https://www.paypal.com/donate/?hosted_button_id=KAYWAT&custom=2coffees" class="button">☕☕ Two Coffees ($12)</a>
+            <a href="https://www.paypal.com/donate/?hosted_button_id=KAYWAT&custom=3coffees" class="button">☕☕☕ Three Coffees ($24)</a>
+            <p>Made with ❤️ by KayWat for the developer community</p>
+        </div>
+    </div>
+</body>
+</html>
