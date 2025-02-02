@@ -1,0 +1,17 @@
+MacroFlow Studio/
+│
+├── reference-capture.py     # Reference point capture utility
+├── macro-tool.py           # Macro recorder and player
+├── requirements.py         # One-click dependency installer
+├── readme.html            # HTML documentation
+├── readme.txt             # Text documentation
+│
+├── ref_images/            # Captured reference images
+├── ref_videos/           # Reference video recordings
+├── logs/                 # Operation logs
+├── screenshots/          # Generated screenshots
+│
+└── examples/             # Example macros and workflows
+    ├── login_test.json
+    ├── form_fill.json
+    └── ui_verify.json
